@@ -92,7 +92,7 @@ for (i in filenames){
   nombre_lista<-paste0("bike_types_",nombre_datos)
   assign(nombre_lista,mensual_common_bike_types)
   
-  "Analisis de tiempo por tipo de cicla y miembro"
+  #Analisis de tiempo por tipo de cicla y miembro
   mensual_bikes_time <-group_by(dataBase,rideable_type,member_casual)%>%  
     count(Tiempo)
   nombre_lista<-paste0("bike_time_",nombre_datos)
